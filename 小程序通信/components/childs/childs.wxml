@@ -1,0 +1,2 @@
+<view bindtap ="childMethods">在这里接受到 父组件信息：{{name}}</view>
+

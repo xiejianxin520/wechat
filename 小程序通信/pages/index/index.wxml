@@ -1,0 +1,6 @@
+<view>父组件:{{msg}}</view>
+<view>--</view>
+<view>--</view>
+<view>--</view>
+<view>子组件</view>
+<childs name="{{msg}}" bindchildMethods="childMethods"></childs>

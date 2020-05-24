@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C03A17",
+    "navigationBarTitleText": "xjx小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#C03A17",
+    "color": "black",
+    "selectedColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/todos.png",
+        "selectedIconPath": "/assets/todos-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "数据",
+        "iconPath": "/assets/logs.png",
+        "selectedIconPath": "/assets/logs-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

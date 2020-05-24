@@ -1,0 +1,57 @@
+<!-- 轮播图 -->
+<swiper indicator-dots indicator-color="#bcc0c9" indicator-active-color="#3a4861">
+  <swiper-item  wx:for ="{{tools.slice(detailList.images)}}" wx:key = "*this" class="switem" >
+  <image mode='aspectFill'  src ="{{item}}"></image>
+  <view></view>
+  </swiper-item>
+</swiper>
+
+<!-- 商铺信息 -->
+<view class ="shopmess">
+  <text class='name'>{{detailList.name}}</text>
+  <text>电话：{{detailList.phone}}</text>
+  <text>地址：{{detailList.address}}</text>
+  <text>营业时间：{{detailList.businessHours}}</text>
+  <view class='score'>{{detailList.score}}</view>
+</view>
+<!-- 评论数据 -->
+<view class='comments'>
+  <view class='item' wx:for="{{detailList.comments}}" wx:key ="name" >
+  <text class="name">{{item.name}}</text>
+  <text class="date">{{item.date}}</text>
+  <text class="rating">{{item.rating}}</text>
+  <text class="content">{{item.content}}</text>
+   <!-- 我们需要对图片的地址做处理，把w.h替换对应的宽度和高度 110*110 -->
+    <!-- 在小程序的{{}}里面不允许调用js的方法 -->
+    <!-- 但是，可以在小程序的{{}}里面调用wxs提供的方法 -->
+    <view class="images">
+        <image bindtap='preview' data-urls="{{item.images}}" data-current="{{img}}"  
+        wx:for ="{{item.images}}"  wx:key ="*this" wx:for-item="img"  src="{{tools.rep(img)}}">
+  </image>
+     </view>
+  </view>
+</view>
+
+<!-- 定义wxs -->
+<wxs module="tools">
+ function rep(str){
+  return str.replace("w.h","100.100")
+ }
+ 
+ function slice(arr){
+ //arr可能是空数组undefind会报错
+  if( arr && arr.length >=6 ){
+    return arr.slice(0,6)
+    }else{
+    return arr
+    }
+ }
+
+
+
+ module.exports ={
+  rep:rep,
+  slice:slice
+ }
+
+</wxs>

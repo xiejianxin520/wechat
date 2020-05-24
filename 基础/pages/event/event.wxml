@@ -1,0 +1,18 @@
+ 
+<!-- 在微信小程序中注册事件分为两种 -->
+<!-- bind+ 事件=事件函数：  bind注册的事件会冒泡 -->
+<!-- catch+事件=事件函数：  catch注册的事件不会冒泡 -->
+
+
+
+<view bind:tap = 'parentfn'>
+<button bindtap="fn">儿子按钮</button>
+<button catchtap= 'fn'>我不会冒泡的catch</button>
+</view>
+<view style='height:200rpx'></view>
+<!-- 需求：点那儿，删除哪个 -->
+<!-- 点击按钮的时候，我想要传参数 -->
+<!-- 给当前元素添加自定义的属性 -->
+
+<button  bindtap='del' data-name="{{item.name}}" data-id="{{item.id}}" data-index ="{{index}}" wx:for="{{list}}"  wx:key="id">{{item.name}}--删除</button>
+

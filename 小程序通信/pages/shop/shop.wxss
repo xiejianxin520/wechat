@@ -1,0 +1,22 @@
+.price{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50rpx;
+}
+
+.input{
+  margin: 20rpx;
+  border: 1px solid #ccc;
+  border-radius:10rpx;
+  display: flex;
+  height: 50rpx;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 0 10rpx #ccc;
+}
+.input input{
+  text-align: center;
+}

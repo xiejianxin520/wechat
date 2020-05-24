@@ -1,0 +1,6 @@
+<!--pages/mine/mine.wxml-->
+<text>{{name}}</text>
+
+<view>{{msg}}</view>
+
+<navigator url="../pageA/pageA?name=navig&age=18">点击我跳转页面A</navigator>

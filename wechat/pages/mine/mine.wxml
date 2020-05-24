@@ -1,0 +1,25 @@
+<!--pages/mine/mine.wxml-->
+<form>
+<view class='item'>
+  <label>姓名：</label>
+  <input placeholder='请填写您的真实姓名' class='btn'></input>
+</view>
+<view class='item'>
+  <label>手机：</label>
+  <input placeholder='请填写您的手机号' class='btn'></input>
+</view>
+<view class='item'>
+  <label>身份：</label>
+  <input placeholder='请选择您与宝宝的关系身份' class='btn'></input>
+</view>
+<view class='item'>
+  <label class="labsty">验证码：</label>
+  <input placeholder='六位验证码' class='btn'></input>
+  <button class='getBtn'>获取验证码</button>
+</view>
+
+<button class='loginBtn'>绑定并登陆</button>
+
+
+
+</form>

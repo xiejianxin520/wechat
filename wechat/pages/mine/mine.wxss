@@ -1,0 +1,32 @@
+/* pages/mine/mine.wxss */
+.item {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  border-bottom:1px solid #ccc;
+  margin: 0 20rpx;
+  font-size: 30rpx;
+}
+.item .btn{
+  flex: auto;
+  text-align:right;
+  margin-right: 20rpx;
+}
+
+.loginBtn{
+  margin: 40rpx;
+  color: #fff;
+  background-color: #FECC3A;
+}
+
+.getBtn{
+  font-size: 27rpx;
+  width: 220rpx;
+  background-color: #3EB7FF;
+  margin-left: 10rpx;
+  border-radius: 30rpx;
+}
+
+.labsty{
+   width:76px;
+}

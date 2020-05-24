@@ -1,0 +1,6 @@
+<!--pages/demo/demo.wxml-->
+<button bindtap="add">添加数据</button>
+<view wx:for="{{list}}"  wx:key = "id">
+{{item.name}}----
+<button data-id="{{item.id}}"  bindtap="del"  style='display:inline'>删除</button>
+</view>

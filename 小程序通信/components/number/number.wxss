@@ -1,0 +1,16 @@
+.child{
+  font-size: 50rpx;
+  display: flex;
+  flex-direction:column;
+  justify-content: cenrer;
+  align-items: center;
+  margin: 100rpx auto;
+}
+.number{
+  display: flex;
+}
+
+.number button{
+  margin:0rpx 30rpx;
+  background-color: greenyellow;
+}

@@ -1,0 +1,6 @@
+nk n<!--pages/setData/setData.wxml-->
+<text>{{msg}}</text>
+<button bindtap="refn">点我修改数据</button>
+<text>输入框：</text><text>text就是span行内元素</text>
+<input value ="{{msg}}" bindinput ="input"  ></input>
+

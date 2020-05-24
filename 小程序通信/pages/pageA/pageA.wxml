@@ -1,0 +1,2 @@
+<!--pages/pageA/pageA.wxml-->
+<text>{{msg}}</text>

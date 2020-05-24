@@ -1,0 +1,8 @@
+<view class='child' >
+  <view class='son'>---子组件---</view>
+  <view class="number">
+    <button bindtap="del">-</button>
+    <view>{{number}}只</view>
+    <button bindtap="add">+</button>
+  </view> 
+</view>

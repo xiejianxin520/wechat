@@ -1,0 +1,16 @@
+Component({
+  properties:{
+   name:{
+     type:String,
+     value:""
+   }
+  },
+  data:{
+    sonmsg:"孩子信息"
+  },
+  methods:{
+    childMethods(){
+    this.triggerEvent("childMethods",this.data.sonmsg)
+    }
+  }
+})

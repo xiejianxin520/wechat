@@ -1,0 +1,6 @@
+/* pages/setData/setData.wxss */
+input{
+  border: 1px solid black;
+  margin-top: 20rpx;
+  width:300rpx;
+}

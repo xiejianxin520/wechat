@@ -1,0 +1,2 @@
+<!--pages/test/test.wxml-->
+<navigator open-type="redirect" url="/pages/index/index">点击转到首页</navigator>

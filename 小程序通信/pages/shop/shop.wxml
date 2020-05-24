@@ -1,0 +1,12 @@
+<view class='input'>
+    <input placeholder='请输入单价' bindinput='changeinput' bindconfirm='confirmChange'></input>
+</view>
+
+
+<view class="price">
+  <view>---父组件---</view>
+  <view>单价：{{singel}}元</view>
+  <view>总价：{{total}}元</view>
+</view>
+
+<number bindadd="add" binddel="del"></number>

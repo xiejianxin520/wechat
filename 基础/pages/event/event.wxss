@@ -1,0 +1,4 @@
+/* pages/event/event.wxss */
+.btn {
+  background-color: greenyellow;
+}

@@ -1,0 +1,18 @@
+<!--pages/wxif/wxif.wxml-->
+<button bindtap='change'>改变切换</button>
+<view wx:if = "{{showid}}">{{msg}}</view>
+<checkbox checked="{{showid}}"></checkbox>
+<view hidden="{{showid}}">hidden相反</view>
+
+<view wx:if ="{{age>=18}}">成年人</view>
+<view wx:elif ="{{age>=16}}">青少年</view>
+<view wx:else>未成年</view>
+<!-- block标签不会显示渲染出来 -->
+<block wx:if = "{{showid}}">
+  <view>控制多行</view>
+  <view>控制多行</view>
+  <view>控制多行</view>
+</block>
+
+<view class='item'>你好</view>
+<view class='item'>我</view>

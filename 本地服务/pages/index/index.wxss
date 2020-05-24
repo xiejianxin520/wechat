@@ -1,0 +1,56 @@
+swiper {
+  height: 340rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%
+}
+
+page {
+  background-color: #ddd;
+}
+
+.categories {
+   background-color: #fff;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.categories .item {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 250rpx;
+  height: 250rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.categories .item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.categories .item text {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.categories .item:nth-child(3n){
+  border-right: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx 0;
+  padding: 20rpx 0; 
+  background-color: #fff;
+}
+
+
+.footer  image {
+ width: 350rpx;
+}
+
